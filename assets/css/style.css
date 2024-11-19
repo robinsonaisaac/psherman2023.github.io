@@ -6,84 +6,46 @@
   /* gradient */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 23%, 22%) 3%, 
-    hsl(220, 23%, 17%) 97%
+    hsl(220, 12%, 25%) 3%, 
+    hsl(220, 12%, 19%) 97%
   );
-  
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(220, 23%, 23%, 0.251) 0%, 
-    hsla(220, 23%, 16%, 0) 100%
-  ), hsl(220, 23%, 19%);
-  
-  --bg-gradient-accent-1: linear-gradient(
+    hsla(220, 12%, 18%, 0.251) 0%, 
+    hsla(220, 12%, 11%, 0) 100%
+  ), hsl(220, 12%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(142, 48%, 55%) 0%, 
-    hsla(142, 48%, 55%, 0) 50%
+    hsl(220, 55%, 65%) 0%, 
+    hsla(220, 55%, 65%, 0) 50%
   );
-  
-  --bg-gradient-accent-2: linear-gradient(
+  --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(142, 48%, 55%, 0.251) 0%, 
-    hsla(142, 48%, 55%, 0) 59.86%
-  ), hsl(220, 23%, 19%);
-  
+    hsla(220, 55%, 65%, 0.251) 0%, 
+    hsla(220, 55%, 65%, 0) 59.86%
+  ), hsl(220, 12%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 23%, 26%) 0%, 
-    hsla(220, 23%, 26%, 0) 50%
+    hsl(220, 12%, 25%) 0%, 
+    hsla(220, 12%, 25%, 0) 50%
   );
-  
-  --text-gradient-accent: linear-gradient(
+  --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(142, 48%, 55%), 
-    hsl(142, 48%, 45%)
+    hsl(220, 55%, 65%), 
+    hsl(220, 55%, 55%)
   );
 
-  /* solid colors */
-  --jet: hsl(220, 23%, 24%);          /* trim & borders */
-  --onyx: hsl(220, 23%, 19%);         /* secondary background */
-  --eerie-black-1: hsl(220, 23%, 17%); /* background elements */
-  --eerie-black-2: hsl(220, 23%, 15%); /* primary background */
-  --smoky-black: hsl(220, 23%, 12%);   /* page background */
+  /* solid */
+  --jet: hsl(220, 12%, 22%);
+  --onyx: hsl(220, 12%, 17%);
+  --eerie-black-1: hsl(220, 12%, 13%);
+  --eerie-black-2: hsl(220, 12%, 12%);
+  --smoky-black: hsl(220, 12%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --accent-color: hsl(142, 48%, 55%);  /* primary accent color */
-  --accent-color-dark: hsl(142, 48%, 45%); /* darker accent for hover */
-  --light-gray: hsl(220, 23%, 84%);
-  --light-gray-70: hsla(220, 23%, 84%, 0.7);
-  --error-color: hsl(0, 60%, 55%);
-
-  /* Update existing color references */
-  --shadow-1: -4px 8px 24px hsla(220, 23%, 8%, 0.25);
-  --shadow-2: 0 16px 30px hsla(220, 23%, 8%, 0.25);
-  --shadow-3: 0 16px 40px hsla(220, 23%, 8%, 0.25);
-  --shadow-4: 0 25px 50px hsla(220, 23%, 8%, 0.15);
-  --shadow-5: 0 24px 80px hsla(220, 23%, 8%, 0.25);
+  --orange-yellow-crayola: hsl(220, 55%, 65%);  /* Changed from orange to blue */
+  --vegas-gold: hsl(220, 55%, 55%);             /* Adjusted to match new scheme */
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
 }
-
-/* Color References Update */
-.icon-box { color: var(--accent-color); }
-
-.navbar-link.active { color: var(--accent-color); }
-
-.timeline-text { color: var(--light-gray); }
-
-.timeline-item::after { background: var(--text-gradient-accent); }
-
-.skill-progress-fill { background: var(--text-gradient-accent); }
-
-.form-input:focus { border-color: var(--accent-color); }
-
-.form-btn { color: var(--accent-color); }
-
-.form-btn:hover { background: var(--bg-gradient-accent-1); }
-
-.form-btn:hover::before { background: var(--bg-gradient-accent-2); }
-
-::selection {
-  background: var(--accent-color);
-  color: var(--white-1);
-}
-
-:focus { outline-color: var(--accent-color); }
