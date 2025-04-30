@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <title>Isaac Robinson | Computer Science Researcher</title>
 
   <!--
     - favicon
@@ -15,7 +15,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/brandur-style.css">
 
   <!--
     - google font link
@@ -26,668 +26,332 @@
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/icon_no_background.png" alt="Isaac Robinson" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Isaac Robinson">Isaac Robinson</h1>
-
-          <p class="title">Student</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+  <div class="main-layout">
+    <aside class="sidebar">
+      <div class="site-header">
+        <img src="./assets/images/Ghibli_Rhodes.png" alt="Rhodes Scholar at University of Oxford" class="profile-image">
+        <h1 class="site-title">Isaac Robinson</h1>
+        <p class="site-subtitle">PhD Candidate</p>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">School Email</p>
-
-              <a href="mailto:isaac.robinson@univ.ox.ac.uk" class="contact-link">isaac.robinson </a>
-              <a href="mailto:isaac.robinson@univ.ox.ac.uk" class="contact">at univ.ox.ac.uk</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Personal Email</p>
-
-              <a href="mailto:robinsonaisaac@gmail.com" class="contact-link">robinsonaisaac</a>
-              <a href="mailto:robinsonaisaac@gmail.com" class="contact">at gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Oxford, Oxfordshire, United Kingdom</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
+      
+      <div class="site-nav">
         <ul class="navbar-list">
-
           <li class="navbar-item">
             <button class="navbar-link active" data-nav-link>About</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Research</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Publications</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
         </ul>
+      </div>
+      
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:isaac.robinson@univ.ox.ac.uk">
+              isaac.
+              robinson@
+              univ.
+              ox.ac.uk</a>
+          </li>
+          <li>
+            <strong>Location:</strong>
+            <span>Oxford, UK</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="social-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=W-JFsWEAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/isaac-robinson-139256146/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </aside>
 
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
+    <div class="main-content">
       <article class="about active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
+        <header class="article-header">
+          <h1 class="article-title">About Me</h1>
         </header>
 
-        <section class="about-text">
+        <div class="toc">
+          <div class="toc-title">Contents</div>
+          <ul>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#research-interests">Research Interests</a></li>
+            <li><a href="#current-work">Current Work</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+
+        <section id="background">
+          <h2>Background</h2>
           <p>
-            Hello! My name is Isaac and I am a student in computer science focused on mechanism design, artificial intelligence, and computational social choice. I am originally from Milton, Massachusetts 
-            and attended Harvard University as an undergraduate where I was advised by Ariel Procaccia and Jamie Tucker-Foltz. I am currently a research student
-            at the University of Oxford.
-            
-           I enjoy looking at problems broadly in the field of theoretical computer science and its societal implications including mechanism design,
-           data privacy (specifically differential privacy), and algorithmic fairness. I am always looking for collaborators and recommendations!
+            I am a doctoral researcher in computer science specializing in mechanism design, artificial intelligence, and computational social choice. 
+            Originally from Milton, Massachusetts, I completed my undergraduate studies at Harvard University where I was advised by Professor Ariel Procaccia 
+            and Dr. Jamie Tucker-Foltz. Currently, I am pursuing doctoral research at the University of Oxford under the supervision of Professor Edith Elkind.
+          </p>
+          
+          <p>
+            My research interests lie at the intersection of theoretical computer science and its societal applications, with particular focus on mechanism design,
+            differential privacy, and algorithmic fairness. I actively seek collaborative research opportunities and welcome recommendations for potential research directions.
           </p>
         </section>
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm (currently) doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Participatory Budgeting</h4>
-
-                <p class="service-item-text">
-                  Problems in computational social choice centering around methods for fairly dividing municipal budgets across projects.
-                </p>
-              </div>
-
+        <section id="research-interests">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>
+              <strong>Computational Social Choice</strong> - Developing algorithms and mechanisms for fair collective decision making.
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Differential Privacy</h4>
-
-                <p class="service-item-text">
-                  Problems in differential privacy and how it relates to artificial intelligence, data valuation, and mechanism design.
-                </p>
-              </div>
-
+            <li>
+              <strong>Differential Privacy</strong> - Exploring the mathematical foundations and applications of privacy-preserving data analysis.
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Algorithmic Fairness</h4>
-
-                <p class="service-item-text">
-                  Interested broadly in how we can make algorithms and decision-making processes more fair. 
-                  Recently interested in multi-calibration.
-                </p>
-              </div>
-
+            <li>
+              <strong>Algorithmic Fairness</strong> - Investigating methods to ensure equitable outcomes from algorithmic systems.
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Fair Division</h4>
-
-                <p class="service-item-text">
-                  Interested in problems around fair division with limitations including information availability, hard constraints for item availability, and complexity. 
-                  Recently interested in the problem of fairly assigning students to schools.
-                </p>
-              </div>
-
+            <li>
+              <strong>Mechanism Design</strong> - Creating incentive-compatible systems for multi-agent environments.
             </li>
-
+            <li>
+              <strong>Mechanistic Interpretability</strong> - Researching approaches to understand the internal mechanisms of neural networks and other complex AI systems.
+            </li>
+            <li>
+              <strong>Cooperative AI</strong> - Exploring the foundations of cooperation between autonomous agents and among AI systems and humans.
+            </li>
+            <li>
+              <strong>Societal Resilience</strong> - Investigating how computational and AI systems can enhance resilience to societal challenges.
+            </li>
           </ul>
-
         </section>
 
-        <!--
-          - Manuscripts
-        -->
-
-        <section class="testimonials">
-          <h3 class="h3 service-title">Manuscripts</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Vote.png" alt="Vote" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title">Obvious Independence of Clones</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Exploring the concept of obvious strategy-proofness in the domain of voting rules.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Algo.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title">Augmenting Fairness With Welfare: A Framework for Algorithmic Justice</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Small steps towards incorporating mechanism design concepts into algorithmic fairness.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <section id="current-work">
+          <h2>Current Work</h2>
+          
+          <div class="research-area">
+            <h3>Participatory Budgeting</h3>
+            <p>
+              Developing computational social choice methods for equitable distribution of municipal budgets across community projects.
+              This work involves algorithmic approaches to preference aggregation with constraints.
+            </p>
+          </div>
+          
+          <div class="research-area">
+            <h3>Differential Privacy</h3>
+            <p>
+              Examining applications of differential privacy in artificial intelligence, data valuation, and mechanism design frameworks.
+              I'm particularly interested in the privacy-utility tradeoff in machine learning contexts.
+            </p>
+          </div>
+          
+          <div class="research-area">
+            <h3>Fair Division</h3>
+            <p>
+              Researching fair division mechanisms under practical constraints including limited information, resource constraints, and computational complexity.
+              Recently focusing on optimal algorithms for school assignment problems.
+            </p>
+          </div>
         </section>
-
+        
+        <section id="education">
+          <h2>Education</h2>
+          
+          <div class="education-item">
+            <h3>University of Oxford</h3>
+            <p class="time-period">2023 — Present</p>
+            <p>Ph.D. in Computer Science, Rhodes Scholar, supervised by Professor Edith Elkind</p>
+          </div>
+          
+          <div class="education-item">
+            <h3>Harvard University</h3>
+            <p class="time-period">2018 — 2023</p>
+            <p>Bachelor of Arts in Computer Science, Phi Beta Kappa, Summa Cum Laude</p>
+          </div>
+          
+          <div class="education-item">
+            <h3>Phillips Exeter Academy</h3>
+            <p class="time-period">2014 — 2018</p>
+            <p>High School</p>
+          </div>
+        </section>
       </article>
 
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
+      <article class="research" data-page="research">
+        <header class="article-header">
+          <h1 class="article-title">Research</h1>
         </header>
-        <a class="h4 article-title" href="https://docs.google.com/document/d/1kpBRSTNm1K8e-uGWJ7-NaivX1IgeC4pw5mPQmhwgmOo/edit?usp=sharing">For full version click here</a>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Oxford</h4>
-
-              <span>2023 — </span>
-
-              <p class="timeline-text">
-               PhD in computer science funded by the Rhodes fellowship and advised by Professor Edith Elkind.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Harvard University</h4>
-
-              <span>2018 — 2023</span>
-
-              <p class="timeline-text">
-                Bachelors of Arts in Computer Science. Phi Beta Kappa. Summa Cum Laude.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Phillips Exeter Academy</h4>
-
-              <span>2014 — 2018</span>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Jane Street</h4>
-
-              <span>Summer 2023</span>
-
-              <p class="timeline-text">
-                Quantitative Trading Intern.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Meta</h4>
-
-              <span>Summer 2022</span>
-
-              <p class="timeline-text">
-                Data Science intern on the Reality Labs team.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Meta</h4>
-
-              <span>Summer 2021</span>
-
-              <p class="timeline-text">
-                Data Science intern on the Facebook App Ecosystems team.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Areas of Expertise</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Computational Social Choice and Mechanism Design</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Algorithmic Fairness and Differential Privacy</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Artificial Intelligence and Machine Learning</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Algorithms and Software Design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
+        
+        <div class="toc">
+          <div class="toc-title">Contents</div>
+          <ul>
+            <li><a href="#working-papers">Working Papers</a></li>
           </ul>
-
+        </div>
+        
+        <section id="working-papers">
+          <h2>Working Papers</h2>
+          
+          <div class="paper">
+            <h3>Obvious Independence of Clones</h3>
+            <p>
+              Exploring strategy-proofness properties in voting mechanisms with a focus on independence of clones.
+              This paper investigates the theoretical foundations of voting rules that maintain their properties when
+              similar candidates (clones) are added or removed from the ballot.
+            </p>
+            <p><a href="#" class="paper-link">Read preprint →</a></p>
+          </div>
+          
+          <div class="paper">
+            <h3>Augmenting Fairness With Welfare: A Framework for Algorithmic Justice</h3>
+            <p>
+              Integrating mechanism design principles with algorithmic fairness metrics to develop comprehensive frameworks for algorithmic justice.
+              We propose a novel approach that balances individual fairness with global welfare considerations.
+            </p>
+            <p><a href="#" class="paper-link">Read preprint →</a></p>
+          </div>
         </section>
-
       </article>
 
-      <!--
-        - #PUBLICATIONS
-      -->
-
-<article class="publications" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
+      <article class="publications" data-page="publications">
+        <header class="article-header">
+          <h1 class="article-title">Publications</h1>
         </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Conferences</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Workshops</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Manuscripts</button>
-            </li>
-
-          </ul>
-
-<li class="filter-item">
-              <button data-filter-btn>Conferences</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Workshops</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Manuscripts</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Conferences</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Workshops</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Manuscripts</button>
-              </li>
-
-            </ul>
-
+        
+        <div class="filter-list">
+          <li class="filter-item">
+            <button class="active" data-filter-btn>All</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Conferences</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Workshops</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Manuscripts</button>
+          </li>
+        </div>
+        
+        <div class="publication-list">
+          <div class="publication" data-category="conferences">
+            <h2 class="publication-title">
+              <a href="https://www.siam.org/conferences/cm/program/accepted-papers/soda24-accepted-papers" target="_blank">
+                School Redistricting: Wiping Unfairness Off the Map
+              </a>
+            </h2>
+            <p class="publication-authors">Robinson, I., Procaccia, A.D., and Tucker-Foltz, J.</p>
+            <p class="publication-venue"><em>Proceedings of the Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)</em>, 2024.</p>
+            <p class="publication-abstract">
+              This paper addresses the challenge of fairly redistricting school catchment areas to balance demographic
+              representation and minimize travel distances. We develop algorithms with theoretical guarantees
+              for this computationally complex problem and demonstrate their application on real-world data.
+            </p>
+            <p><a href="#" class="paper-link">Read paper →</a></p>
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="conferences">
-              <a href="https://www.siam.org/conferences/cm/program/accepted-papers/soda24-accepted-papers">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Schools.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">School Redistricting: Wiping Unfairness Off the Map</h3>
-
-                <p class="project-category">With Ariel Procaccia and Jamie Tucker-Foltz. SODA 2024.</p>
-
+          
+          <div class="publication" data-category="workshops">
+            <h2 class="publication-title">
+              <a href="https://sites.google.com/view/ewaf23/home" target="_blank">
+                Augmenting Fairness With Welfare: A Framework for Algorithmic Justice
               </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="workshops">
-              <a href="https://sites.google.com/view/ewaf23/home">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Justice.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Augmenting Fairness With Welfare: A Framework for Algorithmic Justice</h3>
-
-                <p class="project-category">With Silvia Casacubuerta Puig and Connor Wagaman. EWAF 2023.</p>
-
+            </h2>
+            <p class="publication-authors">Robinson, I., Casacubuerta Puig, S., and Wagaman, C.</p>
+            <p class="publication-venue"><em>European Workshop on Algorithmic Fairness (EWAF)</em>, 2023.</p>
+            <p class="publication-abstract">
+              We present a novel framework that combines notions of fairness with welfare considerations
+              to provide a more comprehensive approach to algorithmic justice. Our work bridges the gap
+              between individual fairness metrics and socially optimal outcomes.
+            </p>
+            <p><a href="#" class="paper-link">Read paper →</a></p>
+          </div>
+          
+          <div class="publication" data-category="manuscripts">
+            <h2 class="publication-title">
+              <a href="https://arxiv.org/abs/2210.04880" target="_blank">
+                Obvious Independence of Clones
               </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="manuscripts">
-              <a href="https://arxiv.org/abs/2210.04880">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/OIoC.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Obvious Independence of Clones</h3>
-
-                <p class="project-category">With Ratip Emin Berker, Christopher Ong, and Silvia Casacubuerta Puig. arXiv preprint, 2022.</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
+            </h2>
+            <p class="publication-authors">Berker, R.E., Ong, C., Casacubuerta Puig, S., and Robinson, I.</p>
+            <p class="publication-venue"><em>arXiv preprint arXiv:2210.04880</em>, 2022.</p>
+            <p class="publication-abstract">
+              This manuscript explores the property of obvious strategy-proofness in the context of voting rules
+              that satisfy independence of clones. We provide theoretical results characterizing voting rules
+              that exhibit both properties and discuss implications for practical voting system design.
+            </p>
+            <p><a href="#" class="paper-link">Read paper →</a></p>
+          </div>
+        </div>
       </article>
-
-      <!--
-        - #CONTACT
-      -->
 
       <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
+        <header class="article-header">
+          <h1 class="article-title">Contact</h1>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
+        
+        <section>
+          <h2>Get in Touch</h2>
+          <p>
+            I welcome research collaborations, speaking opportunities, and general inquiries. Please feel free
+            to reach out through any of the following methods:
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-method">
+              <h3>Email</h3>
+              <p><a href="mailto:isaac.robinson@univ.ox.ac.uk">isaac.robinson@univ.ox.ac.uk</a> (Academic)</p>
+              <p><a href="mailto:robinsonaisaac@gmail.com">robinsonaisaac@gmail.com</a> (Personal)</p>
+            </div>
+            
+            <div class="contact-method">
+              <h3>Location</h3>
+              <p>Department of Computer Science</p>
+              <p>University of Oxford</p>
+              <p>Oxford, Oxfordshire, United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="mapbox">
             <iframe
               src="https://www.google.com/maps?q=Oxford University&output=embed"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
+              width="100%" height="400" loading="lazy" title="Map showing Oxford University location"></iframe>
+          </div>
         </section>
-
+        
         <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
- 
+          <h2>Contact Form</h2>
+          
           <form action="https://formspree.io/f/meqyqdeb" method="POST" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
+            
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input rows="6"></textarea>
+            
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
-
     </div>
-
-  </main>
+  </div>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2023 Isaac Robinson. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!--
     - custom js link
@@ -699,7 +363,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
